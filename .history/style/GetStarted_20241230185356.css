@@ -11,7 +11,6 @@ body {
     color: #ffffff;
     font-family: 'Arial', sans-serif;
     margin: 0;
-    animation: fadeInPlace 1s ease-in-out;
 }
 
 .nav-bar {
@@ -46,7 +45,6 @@ body {
 .nav-bar button {
     border: 1px solid #fff;
     background-color: transparent;
-    font-size: 22px;
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
@@ -59,6 +57,20 @@ body {
     color: #000;
 }
 
+.right a {
+    text-decoration: none;
+    color: white;
+}
+
+.right a:hover{
+    color: #000;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -67,23 +79,21 @@ body {
     text-align: center;
     height: 100%;
     padding-top: 30px; 
-    animation: fadeInPlace 2s ease-in-out;
 }
 
 .content h1 {
     font-size: 80px;
     text-align: center;
     line-height: 1.5;
-    font-weight: 220px;
+    font-weight: bold;
     margin: 15px 0;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
-    animation: fadeInSlide 1.5s ease-in-out;
 }
 .content button {
     border: none;
     padding: 15px 30px;
-    font-size: 22px;
+    font-size: 18px;
     margin: 20px;
     color: #000;
     background-color: #fff;
@@ -91,35 +101,15 @@ body {
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
-    animation: fadeInSlide 2s ease-in-out;
 }
 
 .content button:hover {
-    background-color: #dddddd; 
+    background-color: #9d2f2f; 
+    color: #fff;
     transform: translateY(-2px);
 }
 
 .content p{
     font-size: 25px;
     margin: 20px;
-    animation: fadeInSlide 1.8s ease-in-out;
-}
-@keyframes fadeInPlace {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeInSlide {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

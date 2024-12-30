@@ -46,7 +46,6 @@ body {
 .nav-bar button {
     border: 1px solid #fff;
     background-color: transparent;
-    font-size: 22px;
     color: #fff;
     padding: 8px 15px;
     border-radius: 5px;
@@ -83,7 +82,7 @@ body {
 .content button {
     border: none;
     padding: 15px 30px;
-    font-size: 22px;
+    font-size: 18px;
     margin: 20px;
     color: #000;
     background-color: #fff;
@@ -104,22 +103,38 @@ body {
     margin: 20px;
     animation: fadeInSlide 1.8s ease-in-out;
 }
-@keyframes fadeInPlace {
+
+@keyframes slideDown {
     from {
-        opacity: 0;
+        transform: translateY(-100%);
     }
     to {
-        opacity: 1;
+        transform: translateY(0);
     }
 }
 
-@keyframes fadeInSlide {
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(20px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 }
