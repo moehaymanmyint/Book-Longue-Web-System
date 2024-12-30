@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 50px;
     background-color: rgba(0, 0, 0, 0.6); 
     border-bottom: 1px solid #ccc;
     position: fixed;
@@ -34,7 +34,6 @@ body {
 
 .nav-bar .left img {
     width: 5%;
-    margin: 10px;
 }
 
 .nav-bar h1 {

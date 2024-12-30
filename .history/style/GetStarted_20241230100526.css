@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
-*{
-    font-family: "Playwrite GB S", serif;
-}
 body {
     background-image: url(../src/GetStart-bg.jpg);
     background-size: cover; 
@@ -17,7 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 20px 50px;
     background-color: rgba(0, 0, 0, 0.6); 
     border-bottom: 1px solid #ccc;
     position: fixed;
@@ -26,15 +22,15 @@ body {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.nav-bar .left {
+.nav-bar .left{
     display: flex;
-    justify-content: start;  
-    align-items: center;
+    justify-content: center;
 }
 
-.nav-bar .left img {
-    width: 5%;
-    margin: 10px;
+.nav-bar .left i {
+    font-size: 35px;
+    margin-right: 15px;
+    color: #fff;
 }
 
 .nav-bar h1 {
@@ -66,10 +62,6 @@ body {
     color: #000;
 }
 
-.content a {
-    text-decoration: none;
-    color: black;
-}
 
 .content {
     display: flex;
