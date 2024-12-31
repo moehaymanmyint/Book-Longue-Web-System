@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Lounge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3e2723;
+            color: #fff;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #5d4037;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #d7ccc8;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #ffab91;
+        }
+
+        .search-section {
+            text-align: center;
+            padding: 30px;
+            background-color: #4e342e;
+            margin-top: 10px;
+        }
+
+        .search-section h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #795548;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            background-color: #6d4c41;
+            color: #fff;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffab91;
+            color: #3e2723;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .search-bar button:hover {
+            background-color: #ff8a65;
+        }
+
+        /* Top Categories */
+        .categories {
+            margin: 30px auto;
+            text-align: center;
+            padding: 20px;
+            background-color: #5d4037;
+        }
+
+        .categories h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .categories .category-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .categories button {
+            padding: 10px 15px;
+            font-size: 14px;
+            border: 1px solid #ffab91;
+            background-color: #6d4c41;
+            color: #ffab91;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        .categories button:hover {
+            background-color: #ffab91;
+            color: #3e2723;
+        }
+
+        .books {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .book {
+            width: 120px;
+            text-align: center;
+        }
+
+        .book img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .book-title {
+            font-size: 14px;
+            margin-top: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Book Lounge</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Explore</a>
+            <a href="#">Popular</a>
+            <a href="#">Authors</a>
+            <a href="#">Ask AI</a>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h1>Search Thousands of Books</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for your next book...">
+            <button>Search</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2>Top Categories</h2>
+        <div class="category-buttons">
+            <button>Bestsellers</button>
+            <button>On Sale</button>
+            <button>Fan Favorites</button>
+            <button>Coming Soon</button>
+            <button>Award Winners</button>
+        </div>
+        <div class="books">
+            <div class="book">
+                <img src="https://via.placeholder.com/120x180" alt="Book">
+                <div class="book-title">Harry Potter</div>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/120x180" alt="Book">
+                <div class="book-title">Dear Martin</div>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/120x180" alt="Book">
+                <div class="book-title">With the Fire</div>
+            </div>
+            <div class="book">
+                <img src="https://via.placeholder.com/120x180" alt="Book">
+                <div class="book-title">Thinking Fast</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
