@@ -131,9 +131,8 @@ ul li a {
 #ai-btn {
     font-size: 16px;
     padding: 10px 15px;
-    border: 1px solid #5C4033;
     background-color: #fff;
-    color: #5C4033;
+    color: #4E3629;
     border-radius: 5px;
     font-weight: bold;
     align-items: center;
@@ -142,6 +141,5 @@ ul li a {
 
 #ai-btn:hover {
     background-color: #4E3629;
-    color: #fff !important;
 }
 

@@ -131,17 +131,17 @@ ul li a {
 #ai-btn {
     font-size: 16px;
     padding: 10px 15px;
-    border: 1px solid #5C4033;
-    background-color: #fff;
-    color: #5C4033;
+    background-color: #5C4033;
+    color: white;
     border-radius: 5px;
     font-weight: bold;
+    text-transform: uppercase;
+    display: inline-flex;
     align-items: center;
     gap: 8px;
 }
 
 #ai-btn:hover {
     background-color: #4E3629;
-    color: #fff !important;
 }
 

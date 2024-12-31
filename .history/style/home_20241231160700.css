@@ -11,11 +11,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#navbarNav .nav-item{
-    display: flex;
-    align-items: center;
-}
-
 .navbar-brand {
     font-size: 24px;
     font-weight: bold;
@@ -126,22 +121,5 @@ ul li a {
     max-height: 50px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-#ai-btn {
-    font-size: 16px;
-    padding: 10px 15px;
-    border: 1px solid #5C4033;
-    background-color: #fff;
-    color: #5C4033;
-    border-radius: 5px;
-    font-weight: bold;
-    align-items: center;
-    gap: 8px;
-}
-
-#ai-btn:hover {
-    background-color: #4E3629;
-    color: #fff !important;
 }
 
