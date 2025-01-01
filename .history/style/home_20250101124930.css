@@ -191,9 +191,14 @@ ul li a {
 }
 
 .card p span {
-    color: #3e2316;
     font-weight: bolder;
-    font-size: 18px;
+    color: #5C4033;
+}
+
+.card .rating {
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .book-type {

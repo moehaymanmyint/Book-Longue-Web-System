@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family: "Playwrite GB S", serif;
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -19,7 +19,7 @@ body {
 
 .navbar-brand {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 600;
     color: #333 !important;
 }
 
@@ -28,14 +28,13 @@ ul li {
 }
 
 ul li a {
-    font-size: 18px !important;
+    font-size: 16px !important;
+    font-weight: 500;
 }
 
 .navbar-nav .nav-link {
-    font-size: 16px;
-    font-weight: 500;
     color: #555 !important;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
@@ -48,14 +47,13 @@ ul li a {
     padding: 40px;
     background-color: #fff;
     margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-section h1 {
-    font-size: 28px;
-    margin-bottom: 10px;
+    font-size: 32px;
+    margin-bottom: 20px;
     color: #4E3629;
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
 .search-bar {
@@ -71,7 +69,7 @@ ul li a {
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     outline: none;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s;
 }
 
 .search-bar input:focus {
@@ -86,7 +84,7 @@ ul li a {
     font-size: 16px;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .search-bar button:hover {
@@ -100,10 +98,10 @@ ul li a {
 }
 
 .categories h2 {
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: 20px;
     color: #4E3629;
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
 .categories .category-buttons {
@@ -121,7 +119,7 @@ ul li a {
     color: #5C4033;
     border-radius: 20px;
     font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .categories button:hover {
@@ -147,7 +145,7 @@ ul li a {
     display: flex;
     align-items: center;
     gap: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 #ai-btn:hover {
@@ -158,17 +156,12 @@ ul li a {
 .card {
     border: 1px solid #ddd;
     color: #4E3629;
-    border-radius: 8px;
-    padding: 16px;
+    border-radius: 10px;
+    padding: 20px;
     text-align: center;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 300px; /* Uniform card width */
-    height: 450px; /* Uniform card height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
@@ -176,24 +169,21 @@ ul li a {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card img {
-    max-width: 90%;
-    max-height: 200px; /* Constrain the image height */
-    object-fit: contain; /* Ensure image fits properly */
-    margin: 0 auto; /* Center the image */
-    display: block;
-}
-
 .card h5 {
     font-size: 20px;
-    font-weight: bolder !important;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .card p span {
-    color: #3e2316;
-    font-weight: bolder;
-    font-size: 18px;
+    font-weight: bold;
+    color: #5C4033;
+}
+
+.card .rating {
+    color: #FF5722;
+    font-weight: bold;
+    font-size: larger;
 }
 
 .book-type {
@@ -207,14 +197,10 @@ ul li a {
     font-weight: bold;
     margin-top: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .book-type:hover {
     background-color: #5C4033;
     color: #fff;
-}
-
-.search-results {
-    padding: 10px 80px;
 }

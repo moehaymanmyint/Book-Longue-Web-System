@@ -9,10 +9,9 @@ body {
 
 .navbar {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
 }
 
-#navbarNav .nav-item {
+#navbarNav .nav-item{
     display: flex;
     align-items: center;
 }
@@ -35,7 +34,6 @@ ul li a {
     font-size: 16px;
     font-weight: 500;
     color: #555 !important;
-    transition: color 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover {
@@ -48,7 +46,6 @@ ul li a {
     padding: 40px;
     background-color: #fff;
     margin-top: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-section h1 {
@@ -66,27 +63,21 @@ ul li a {
 
 .search-bar input {
     width: 60%;
-    padding: 12px;
+    padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
     outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.search-bar input:focus {
-    border-color: #5C4033;
 }
 
 .search-bar button {
-    padding: 12px 20px;
+    padding: 10px 20px;
     border: none;
     background-color: #5C4033;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 0 5px 5px 0;
-    transition: background-color 0.3s ease;
 }
 
 .search-bar button:hover {
@@ -119,9 +110,8 @@ ul li a {
     border: 1px solid #5C4033;
     background-color: #fff;
     color: #5C4033;
+    cursor: pointer;
     border-radius: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .categories button:hover {
@@ -130,8 +120,10 @@ ul li a {
 }
 
 #profile-icon .profile-img {
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: auto;
+    max-width: 50px; 
+    max-height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -144,15 +136,13 @@ ul li a {
     color: #5C4033;
     border-radius: 5px;
     font-weight: bold;
-    display: flex;
     align-items: center;
     gap: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #ai-btn:hover {
     background-color: #4E3629;
-    color: #fff;
+    color: #fff !important;
 }
 
 .card {
@@ -161,60 +151,15 @@ ul li a {
     border-radius: 8px;
     padding: 16px;
     text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 300px; /* Uniform card width */
-    height: 450px; /* Uniform card height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-    max-width: 90%;
-    max-height: 200px; /* Constrain the image height */
-    object-fit: contain; /* Ensure image fits properly */
-    margin: 0 auto; /* Center the image */
-    display: block;
-}
-
 .card h5 {
     font-size: 20px;
     font-weight: bolder !important;
     margin-bottom: 10px;
 }
 
-.card p span {
-    color: #3e2316;
-    font-weight: bolder;
-    font-size: 18px;
-}
-
-.book-type {
-    display: inline-block;
-    padding: 8px 15px;
-    font-size: 14px;
-    border: 1px solid #5C4033;
-    background-color: #fff;
-    color: #5C4033;
-    border-radius: 20px;
-    font-weight: bold;
-    margin-top: 15px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.book-type:hover {
-    background-color: #5C4033;
-    color: #fff;
-}
-
-.search-results {
-    padding: 10px 80px;
+.card p span{
+    font-weight: 900 !important;
+    color: red;
 }

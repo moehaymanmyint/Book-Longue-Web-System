@@ -164,24 +164,11 @@ ul li a {
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 300px; /* Uniform card width */
-    height: 450px; /* Uniform card height */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-    max-width: 90%;
-    max-height: 200px; /* Constrain the image height */
-    object-fit: contain; /* Ensure image fits properly */
-    margin: 0 auto; /* Center the image */
-    display: block;
 }
 
 .card h5 {
@@ -191,9 +178,14 @@ ul li a {
 }
 
 .card p span {
-    color: #3e2316;
     font-weight: bolder;
-    font-size: 18px;
+    color: #5C4033;
+}
+
+.card .rating {
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .book-type {
@@ -215,6 +207,10 @@ ul li a {
     color: #fff;
 }
 
-.search-results {
-    padding: 10px 80px;
+.card img {
+    max-width: 90%;   /* Adjust the image width to be smaller */
+    height: auto;     /* Maintain aspect ratio */
+    margin-left: auto; /* Center image horizontally */
+    margin-right: auto; /* Center image horizontally */
+    display: block;   /* Ensure image behaves like a block element */
 }
